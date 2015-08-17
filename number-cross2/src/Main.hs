@@ -58,10 +58,10 @@ mkClue' xs x = do
   assert =<< mkOr [sEq,pEq]
 
 data Across = AcrossAST { unAcrossAST :: [AST] }
-            | AcrossInt { unAcrossInt :: Integer } 
+            | AcrossInt { unAcrossInt :: Integer }
 
 data Down = DownAST { unDownAST :: [AST] }
-          | DownInt { unDownInt :: Integer } 
+          | DownInt { unDownInt :: Integer }
 
 class Clue a where
   mkClue :: MonadZ3 m => a -> a -> m ()
