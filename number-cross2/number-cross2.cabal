@@ -1,0 +1,20 @@
+name:                number-cross2
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              Nikita Karetnikov
+maintainer:          nikita@karetnikov.org
+copyright:           2015 Nikita Karetnikov
+category:            Puzzle
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable number-cross2
+  main-is:             Main.hs
+  ghc-options:         -Wall -Werror -O2
+  build-depends:       base
+                     , matrix
+                     , split
+                     , z3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
